@@ -33,6 +33,18 @@ elif idade >= 13 and idade <= 18:
 else:
     print('Adulto')
 
+# OU \/
+
+idade1 = int(input("Digite sua idade: "))
+if 0 < idade1 <= 12:
+    print("Criança")
+elif 12 < idade1 < 18:
+    print("Adolescente")
+elif idade1 >= 18:
+    print("Adulto")
+else: 
+    print("Valor inválido!")
+
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 3 - Solicite um nome de usuário e uma senha e use uma estrutura if else para verificar se o nome de usuário e a senha fornecidos correspondem aos valores esperados determinados por você.
@@ -56,4 +68,18 @@ else:
 # Terceiro Quadrante: os valores de x e y devem ser menores que zero;
 # Quarto Quadrante: o valor de x é maior que zero e o valor de y é menor que zero;
 # Caso contrário: o ponto está localizado no eixo ou origem.
+
+y = float(input('Informe y: '))
+x = float(input('Informe x: '))
+
+if (x > 0 and y > 0):
+    print('Primeiro quadrante')
+elif (x < 0 and y > 0):
+    print('Segundo quadrante')
+elif (x < 0 and y < 0):
+    print('Terceiro quadrante')
+elif (x > 0 and y < 0):
+    print('Quato quadrante')
+else:
+    print('Está no eixo')
 
